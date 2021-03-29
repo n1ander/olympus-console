@@ -1,8 +1,9 @@
 #include <iostream>
+#include "entry.h"
 
 using std::cout;
 
 int main(){
-	std::cout << "Hello World\n";
+	Entry e("Sample");
 	return 0;
 }
