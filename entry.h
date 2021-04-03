@@ -8,10 +8,15 @@ using std::string;
 
 class Entry{
 	public:
-		Entry(string entry);
+		Entry(){
+			std::cout << "Constructor initiated.." << std::endl;
+		}
 
 	private:
-		string entry = "This is an entry!";
+		int id;
+		string pushups;
+		string pullups;
+		string runTime;
 };
 
 
