@@ -8,9 +8,12 @@ using std::string;
 
 class Entry{
 	public:
+		//constructor
 		Entry(){
 			std::cout << "Constructor initiated.." << std::endl;
 		}
+		//destructor
+		~Entry();
 
 	private:
 		int id;
