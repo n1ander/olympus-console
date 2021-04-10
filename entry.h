@@ -13,7 +13,9 @@ class Entry{
 			std::cout << "Constructor initiated.." << std::endl;
 		}
 		//destructor
-		~Entry();
+		~Entry(){
+			std::cout << "Destructor initiated.." << std::endl;
+		}
 
 	private:
 		int id;
