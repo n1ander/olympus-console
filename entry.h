@@ -16,12 +16,13 @@ class Entry{
 		~Entry(){
 			std::cout << "Destructor initiated.." << std::endl;
 		}
+		void print();
 
 	private:
-		int id;
-		string pushups;
-		string pullups;
-		string runTime;
+		int id = 1;
+		string pushups = "50";
+		string pullups = "20";
+		string runTime = "1030";
 };
 
 
