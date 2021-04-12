@@ -6,5 +6,6 @@ using std::cout;
 
 int main(){
 	Entry e;
+	e.print();
 	return 0;
 }
