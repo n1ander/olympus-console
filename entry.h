@@ -17,6 +17,7 @@ class Entry{
 			std::cout << "Destructor initiated.." << std::endl;
 		}
 		void print();
+		void createLog();
 
 	private:
 		int id = 1;
