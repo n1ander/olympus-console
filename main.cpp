@@ -15,7 +15,7 @@ int main(){
 		cout << "A log file exists...\n";
 	} else {
 		cout << "A log file does not exist...\n";
+		e.createLog();
 	}
-	//e.createLog();
 	return 0;
 }
