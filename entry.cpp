@@ -16,3 +16,7 @@ void Entry::createLog(){
 	log << "ID-----PUSHUPS-----PULLUPS-----RUN TIME";
 	log.close();
 }
+
+void Entry::appendLog(){
+	std::cout << "Append to log.." << std::endl;
+}
