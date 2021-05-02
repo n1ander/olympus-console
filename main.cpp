@@ -17,5 +17,6 @@ int main(){
 		cout << "A log file does not exist...\n";
 		e.createLog();
 	}
+	e.appendLog(1, "50", "20", "1030");
 	return 0;
 }
