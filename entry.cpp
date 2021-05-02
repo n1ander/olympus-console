@@ -17,6 +17,6 @@ void Entry::createLog(){
 	log.close();
 }
 
-void Entry::appendLog(){
-	std::cout << "Append to log.." << std::endl;
+void Entry::appendLog(int id, string pushups, string pullups, string runTime){
+	std::cout << "Appended values: " << id << "," <<  pushups << "," << pullups << "," << runTime << std::endl;
 }

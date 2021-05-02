@@ -18,7 +18,7 @@ class Entry{
 		}
 		void print();
 		void createLog();
-		void appendLog();
+		void appendLog(int id, string pushups, string pullups, string runTime);
 
 	private:
 		int id = 1;
