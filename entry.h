@@ -22,9 +22,9 @@ class Entry{
 
 	private:
 		int id = 1;
-		string pushups = "100";
-		string pullups = "20";
-		string runTime = "1030";
+		string pushups = "";
+		string pullups = "";
+		string runTime = "";
 };
 
 
