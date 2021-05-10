@@ -18,5 +18,8 @@ void Entry::createLog(){
 }
 
 void Entry::appendLog(int id, string pushups, string pullups, string runTime){
+	std::ofstream log;
+	log.open("log.txt", std::ios_base::app);
+	log << id << "," << pushups << "," << pullups << "," << runTime << std::endl;
 	std::cout << "Appended values: " << id << "," <<  pushups << "," << pullups << "," << runTime << std::endl;
 }
