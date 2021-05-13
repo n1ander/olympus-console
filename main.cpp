@@ -17,18 +17,25 @@ int main(){
 		cout << "A log file does not exist...\n";
 		e.createLog();
 	}
-	int id;
-	string pushups;
-	string pullups;
-	string runTime;
-	cout << "Enter ID: ";
-	cin >> id;
-	cout << "Enter pushups: ";
-	cin >> pushups;
-	cout << "Enter pullups: ";
-	cin >> pullups;
-	cout << "Enter mile time: ";
-	cin >> runTime;
-	e.appendLog(id, pushups, pullups, runTime);
+	char userInput;
+	cout << "Would you like to add an entry? Type 'y' for yes or anything else for no. ";
+	cin >> userInput;
+	if(userInput == 'y'){
+		int id;
+		string pushups;
+		string pullups;
+		string runTime;
+		cout << "Enter ID: ";
+		cin >> id;
+		cout << "Enter pushups: ";
+		cin >> pushups;
+		cout << "Enter pullups: ";
+		cin >> pullups;
+		cout << "Enter mile time: ";
+		cin >> runTime;
+		e.appendLog(id, pushups, pullups, runTime);
+	} else {
+		return 0;
+	}
 	return 0;
 }
