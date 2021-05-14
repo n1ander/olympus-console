@@ -18,6 +18,7 @@ int main(){
 		e.createLog();
 	}
 	char userInput;
+	e.getID();
 	cout << "Would you like to add an entry? Type 'y' for yes or anything else for no. ";
 	cin >> userInput;
 	if(userInput == 'y'){

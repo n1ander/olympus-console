@@ -23,3 +23,11 @@ void Entry::appendLog(int id, string pushups, string pullups, string runTime){
 	log << id << "," << pushups << "," << pullups << "," << runTime << std::endl;
 	std::cout << "Appended values: " << id << "," <<  pushups << "," << pullups << "," << runTime << std::endl;
 }
+
+void Entry::displayLog(){
+	std::cout << "Show all log entries..." << std::endl;
+}
+
+void Entry::getID(){
+	std::cout << id << std::endl;
+}
