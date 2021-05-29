@@ -26,8 +26,9 @@ int main(){
 		string pushups;
 		string pullups;
 		string runTime;
-		cout << "Enter ID: ";
-		cin >> id;
+		//cout << "Enter ID: ";
+		//cin >> id;
+		id = e.getID();
 		cout << "Enter pushups: ";
 		cin >> pushups;
 		cout << "Enter pullups: ";
