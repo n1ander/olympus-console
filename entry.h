@@ -20,10 +20,10 @@ class Entry{
 		void createLog();
 		void appendLog(int id, string pushups, string pullups, string runTime);
 		void displayLog();
-		void getID();
+		int getID();
 
 	private:
-		int id = 1;
+		int id = 0;
 		string pushups = "";
 		string pullups = "";
 		string runTime = "";

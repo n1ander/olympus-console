@@ -28,6 +28,7 @@ void Entry::displayLog(){
 	std::cout << "Show all log entries..." << std::endl;
 }
 
-void Entry::getID(){
-	std::cout << id << std::endl;
+int Entry::getID(){
+	id++;
+	return id;
 }
