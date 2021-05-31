@@ -18,7 +18,6 @@ int main(){
 		e.createLog();
 	}
 	char userInput;
-	e.getID();
 	cout << "Would you like to add an entry? Type 'y' for yes or anything else for no. ";
 	cin >> userInput;
 	if(userInput == 'y'){
@@ -26,8 +25,6 @@ int main(){
 		string pushups;
 		string pullups;
 		string runTime;
-		//cout << "Enter ID: ";
-		//cin >> id;
 		id = e.getID();
 		cout << "Enter pushups: ";
 		cin >> pushups;
