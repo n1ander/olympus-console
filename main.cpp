@@ -18,38 +18,24 @@ int main(){
 		e.createLog();
 	}
 	int userInput;
-	cout << "Please select one of the following.\n(1) View Log (2) Append (3) Exit\nSelection: ";
+	cout << "Please select one of the following.\n(1) View Log (2) Append (3) Delete Log (4) Exit\nSelection: ";
 	cin >> userInput;
 	switch(userInput){
 		case 1:
-			cout << "You entered 1.\n";
+			e.displayLog();
 			break;
 		case 2:
-			cout << "You entered 2.\n";
+
 			break;
 		case 3:
+			e.deleteLog("log.txt");
+			break;
+		case 4: 
 			cout << "Exiting Application...\n";
 			return 0;
-			break;
 		default:
 			cout << "You entered an incorrect value.\n";
 			break;
 	}
-	/*if(userInput == 'y'){
-		int id;
-		string pushups;
-		string pullups;
-		string runTime;
-		id = e.getID();
-		cout << "Enter pushups: ";
-		cin >> pushups;
-		cout << "Enter pullups: ";
-		cin >> pullups;
-		cout << "Enter mile time: ";
-		cin >> runTime;
-		e.appendLog(id, pushups, pullups, runTime);
-	} else {
-		return 0;
-	}*/
 	return 0;
 }

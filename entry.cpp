@@ -24,6 +24,18 @@ void Entry::appendLog(int id, string pushups, string pullups, string runTime){
 	std::cout << "Appended values: " << id << "," <<  pushups << "," << pullups << "," << runTime << std::endl;
 }
 
+void Entry::deleteLog(string filename){
+	std::cout << "Are you sure you would like to delete " << filename << "?\nSelection: ";
+	char confirm;
+	std::cin >> confirm;
+	if(confirm == 'y'){
+		std::cout << "FIle is going to be deleted.\n";
+		remove(filename);
+	} else {
+		std::cout << "File will not be deleted.";
+	}
+}
+
 void Entry::displayLog(){
 	std::cout << "Show all log entries..." << std::endl;
 }

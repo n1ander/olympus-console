@@ -2,6 +2,7 @@
 #define ENTRY_H
 
 #include <string>
+#include <stdio.h>
 
 using std::string;
 
@@ -19,6 +20,7 @@ class Entry{
 		void print();
 		void createLog();
 		void appendLog(int id, string pushups, string pullups, string runTime);
+		void deleteLog(string filename);
 		void displayLog();
 		int getID();
 
