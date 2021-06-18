@@ -30,13 +30,13 @@ void Entry::deleteLog(string filename){
 	std::cin >> confirm;
 	if(confirm == 'y'){
 		std::cout << "FIle is going to be deleted.\n";
-		remove(filename);
+		if(remove(filename) != 0)
 	} else {
 		std::cout << "File will not be deleted.";
 	}
 }
 
-void Entry::displayLog(){
+void Entry::displayLog(string filename){
 	std::cout << "Show all log entries..." << std::endl;
 }
 

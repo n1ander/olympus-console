@@ -21,7 +21,7 @@ class Entry{
 		void createLog();
 		void appendLog(int id, string pushups, string pullups, string runTime);
 		void deleteLog(string filename);
-		void displayLog();
+		void displayLog(string filename);
 		int getID();
 
 	private:
