@@ -29,8 +29,8 @@ void Entry::deleteLog(string filename){
 	char confirm;
 	std::cin >> confirm;
 	if(confirm == 'y'){
-		std::cout << "FIle is going to be deleted.\n";
-		if(remove(filename) != 0)
+		std::cout << "File is going to be deleted.\n";
+		if(remove("log.txt") != 0);
 	} else {
 		std::cout << "File will not be deleted.";
 	}

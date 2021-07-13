@@ -22,7 +22,7 @@ int main(){
 	cin >> userInput;
 	switch(userInput){
 		case 1:
-			e.displayLog();
+			e.displayLog("log.txt");
 			break;
 		case 2:
 
