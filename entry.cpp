@@ -37,7 +37,13 @@ void Entry::deleteLog(string filename){
 }
 
 void Entry::displayLog(string filename){
+	string output;
 	std::cout << "Show all log entries..." << std::endl;
+	std::ifstream readFile("log.txt");
+	while (getline (readFile, output)) {
+  	// Output the text from the file
+  	std::cout << output << std::endl;
+  }
 }
 
 int Entry::getID(){
